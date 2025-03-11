@@ -1,0 +1,198 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: #39a7a7;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 51, 99);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#img {
+    width: 300px; /* Përshtate sipas nevojës */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#text {
+    max-width: 400px;
+   
+}
+
+#study{
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(46, 46, 46);
+}
+
+#quote{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(128, 128, 128);
+    } 
+
+#h1 {
+    font-size: 28px;
+    color: #6d6c6c;
+}
+
+#p {
+    font-size: 18px;
+    color: #8d8c8c;
+}
+
+#about {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#h2 {
+    font-size: 24px;
+    color: #574c96;
+}
+
+#p {
+    font-size: 18px;
+    color: #8a59fc;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#fundi {
+    background-color: #000f50; 
+    color: white; 
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px; /* Kënde të lëmuara */
+    margin-top: 30px; /* Hapësirë sipër seksionit */
+}
+
+#h21 {
+    font-size: 32px; 
+    margin-bottom: 15px; /* Hapësirë mes titullit dhe përshkrimit */
+}
+
+#p2 {
+    font-size: 20px; 
+    margin-bottom: 20px; /* Hapësirë mes përshkrimit dhe butonit */
+    color: #ecf0f1; 
+}
+
+#button {
+    background-color: #16a085; 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 20px; 
+    border-radius: 5px; /* Kënde të lëmuara për butonin */
+    transition: background-color 0.3s; 
+}
+
+#button:hover {
+    background-color: #1abc9c; /* Ngjyra e butonit kur kalohet mbi të */
+}
+
+
+
+
+#technique {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#technique-image img {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;  
+    border-radius: 8px;  
+}
+
+
+#technique-info {
+    flex: 1; /* Lejon që informacioni të marrë hapësirën e mbetur */
+    padding-left: 20px;  /* Hapësirë mes fotos dhe shkrimit */
+}
+
+
+#technique-info h3 {
+    font-size: 28px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+
+#technique-info p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+#technique2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#technique-image2 img {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;  /* Ruajtja e proporcioneve */
+    border-radius: 8px;  
+
+}
+
+
+#technique-info2 {
+    flex: 1; /* Lejon që informacioni të marrë hapësirën e mbetur */
+    padding-left: 20px; 
+}
+
+
+#technique-info2 h3 {
+    font-size: 28px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+
+#technique-info2 p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
