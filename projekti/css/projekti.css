@@ -196,3 +196,34 @@ color: rgb(46, 46, 46);
     color: #555;
     line-height: 1.6;
 }
+
+
+#technique3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#technique-image3 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#technique-info3 h3 {
+    font-size: 28px;
+    color: #39a7a7;
+    margin-bottom: 15px;
+}
+
+#technique-info3 p {
+    font-size: 18px;
+    color: beige;
+    line-height: 1.6;
+}
