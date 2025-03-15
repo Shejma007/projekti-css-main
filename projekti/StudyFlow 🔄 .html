@@ -19,8 +19,7 @@
     <section id="quizzes">
         <h2>Test Your Knowledge</h2>
         <p>Click below to test your study techniques:</p>
-        
-       
+    
         <div id="dropdown">
             <button id="dropbutton">Quizzes</button>
             <div id="dropdown-list">
@@ -29,32 +28,43 @@
                 <a href="https://kahoot.com/" target="_blank">Kahoot - Interactive Learning Games</a>
             </div>
         </div>
+    
         <div id="quiz-explanation">
-            <h3>How these quizzes help:</h3>
-            <ul>
-                <li><strong>Quizlet:</strong> Helps with memorization using flashcards and interactive study tools.</li>
-                <li><strong>Anki:</strong> Uses spaced repetition to enhance long-term retention.</li>
-                <li><strong>Kahoot:</strong> Makes learning fun with engaging and interactive quiz games.</li>
-            </ul>
-        </div>
-    </section>
+            <div class="quiz-text">
+                <h3>How these quizzes help:</h3>
+                <ul>
+                    <li><strong>Quizlet:</strong> Helps with memorization using flashcards and interactive study tools.</li>
+                    <li><strong>Anki:</strong> Uses spaced repetition to enhance long-term retention.</li>
+                    <li><strong>Kahoot:</strong> Makes learning fun with engaging and interactive quiz games.</li>
+                </ul>
+            </div>
+           
 
-    <img id="quiz-image" src="quizzfoto.jpg">
-
-    <section id="study-videos">
-        <h2>StudyFlow Video Resources</h2>
-        <p>Watch these videos to improve your study techniques:</p>
-    
-        <div id="videos">
-            <iframe width="400" height="225" src="https://youtu.be/ioVPxHX-gUM" frameborder="0" allowfullscreen></iframe>
-    
-            <iframe width="400" height="225" src="https://youtu.be/ioVPxHX-gUM" frameborder="0" allowfullscreen></iframe>
-    
-            <iframe width="400" height="225" src="https://youtu.be/ioVPxHX-gUM" frameborder="0" allowfullscreen></iframe>
+            
+            
         </div>
     </section>
     
+    
+    
 
-    
-    
-    
+    <form id="diary-form">
+        <label for="diary-date">📅 Mark the date:</label>
+        <input type="date" id="diary-date" required>
+
+        <label for="diary-entry">✍️Write your opinion:</label>
+        <textarea id="diary-entry" rows="4" placeholder="Write your study experience..."></textarea>
+
+        <button type="submit">Add to Diary</button>
+    </form>
+</section>
+
+
+
+
+<div id="motivational-message">
+    <h3>Stay motivated!</h3>
+    <p>"The future belongs to those who believe in the beauty of their dreams." – Eleanor Roosevelt</p>
+</div>
+
+

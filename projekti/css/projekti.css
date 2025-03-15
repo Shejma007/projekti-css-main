@@ -36,6 +36,7 @@ nav ul li a:hover {
     justify-content: center;
     padding: 20px;
     transition: transform 0.5s ease-in-out;
+    background: -webkit-linear-gradient(45deg, #f9ffc5, #eeedc0);
 }
 
 #home:hover {
@@ -161,7 +162,7 @@ nav ul li a:hover {
 
 
 #techniques {
-    background-color: #f9f9f9; 
+    background: -webkit-linear-gradient(45deg, #7f46e7, #b877d1);
     padding: 40px;
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -455,89 +456,9 @@ nav ul li a:hover {
     }
 
 
-#dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-#dropbutton {
-    background-color: #004646; 
-    color: white; 
-    padding: 14px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#dropbutton:hover {
-    background-color: #3e8e41;
-}
-
-
-#dropdown-list {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-
-
-#dropdown-list a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-#dropdown-list a:hover {
-    background-color: #ddd;
-}
-
-
-#dropdown:hover #dropdown-list {
-    display: block;
-}
-
-#quiz-explanation {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f0f8ff; 
-    border-left: 5px solid #004646; 
-    border-radius: 5px;
-    max-width: 500px;
-}
-
-#quiz-explanation h3 {
-    color: #2c3e50;
-    font-size: 20px;
-}
-
-#quiz-explanation ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#quiz-explanation li {
-    padding: 5px 0;
-    font-size: 16px;
-}
-
-#quiz-image {
-    width: 100%;
-    max-width: 200px;
-    display: inline;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 #quiz {
-    background: white;
+    background: -webkit-linear-gradient(45deg, #f9ffc5, #eeedc0);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -550,7 +471,7 @@ h2 {
 }
 
 label {
-    display: block;
+    display: inline;
     font-weight: bold;
     margin: 10px 0 5px;
 }
@@ -563,7 +484,7 @@ select {
 }
 
 button {
-    background-color: #28a745;
+    background-color: #6f9778;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -574,7 +495,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #548d61;
 }
 
 #result {
@@ -586,21 +507,150 @@ button:hover {
 
 
 
-#study-videos {
+
+#study-diary {
+    background: #ffebee;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-left: 5px solid #e91e63;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
     text-align: center;
-    padding: 40px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    font-size: 24px;
 }
 
-#videos {
+.entry {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+form {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
 }
 
-iframe {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+label {
+    font-weight: bold;
 }
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #e91e63;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c2185b;
+}
+
+
+#quizzes {
+    text-align: center;
+    padding: 20px;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropbutton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#dropdown:hover #dropdown-list {
+    display: block;
+}
+
+#dropdown-list a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown-list a:hover {
+    background-color: #ddd;
+}
+
+#quiz-explanation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.quiz-text {
+    flex: 1;
+    text-align: left;
+}
+
+
+#motivational-message {
+    background-color: #f4f7f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#motivational-message h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#motivational-message p {
+    color: #7f8c8d;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#motivational-message p::before {
+    content: "“";
+    font-size: 36
+
+}
+
+
+
