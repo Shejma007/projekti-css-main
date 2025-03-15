@@ -28,14 +28,75 @@
         <p id="p">Effective Study Guide is designed to help you learn faster and smarter.  
             Here, you will find study strategies, practical tips, and tools that will enhance your academic skills.</p>
     </section>
+    <br>
+    <br>
+  
+   
+    <section id="quiz">
+        <h2>How Effective Are Your Study Habits?</h2>
+        <form id="studyQuiz">
+            <label>How many hours do you study per day?</label>
+            <select id="hours">
+                <option value="low">Less than 1 hour</option>
+                <option value="medium">1-3 hours</option>
+                <option value="high">More than 3 hours</option>
+            </select>
+
+            <label>How often do you take breaks while studying?</label>
+            <select id="breaks">
+                <option value="low">Rarely</option>
+                <option value="medium">Every 1-2 hours</option>
+                <option value="high">Every 30-45 minutes</option>
+            </select>
+
+            <label>Do you use study techniques like Active Recall or Spaced Repetition?</label>
+            <select id="techniques">
+                <option value="low">No, I just read and highlight</option>
+                <option value="medium">Sometimes</option>
+                <option value="high">Yes, regularly</option>
+            </select>
+
+            <button type="button" onclick="showResult()">Check Your Score</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <script>
+        function showResult() {
+            let hours = document.getElementById("hours").value;
+            let breaks = document.getElementById("breaks").value;
+            let techniques = document.getElementById("techniques").value;
+
+            let score = 0;
+            if (hours === "high") score++;
+            if (breaks === "high") score++;
+            if (techniques === "high") score++;
+
+            let resultText = "";
+            if (score === 3) {
+                resultText = "✅ Excellent! You have great study habits!";
+            } else if (score === 2) {
+                resultText = "👍 Good! But there's room for improvement.";
+            } else {
+                resultText = "⚠️ You may need to adjust your study habits.";
+            }
+
+            document.getElementById("result").innerHTML = "<p>" + resultText + "</p>";
+        }
+    </script>
+      </div>
     
+<br>
     <section id="fundi">
         <h2 id="h21">Start improving today!</h2>
         <p id="p2">Browse our sections and discover how you can make studying more effective!</p>
         <a href="Study Techniques.html" id="button">Get Started</a>
     </section>
 
+   
     
+
 
 </body>
 </html>
