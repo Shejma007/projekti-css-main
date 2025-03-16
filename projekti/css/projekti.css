@@ -161,6 +161,121 @@ transform: translate(-10px);
 }
 
 
+  /* Përshtatje për ekranet më të vogla (smartphone) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #text {
+        max-width: 100%;
+    }
+
+    #study {
+        font-size: 24px;
+    }
+
+    #quote {
+        font-size: 16px;
+    }
+
+    #about {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    #about #h2 {
+        font-size: 22px;
+    }
+
+    #about #p {
+        font-size: 16px;
+    }
+
+    #fundi {
+        padding: 30px;
+    }
+
+    #fundi #h21 {
+        font-size: 28px;
+    }
+
+    #fundi #p2 {
+        font-size: 18px;
+    }
+
+    #button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+
+/* Përshtatje për ekranet e mesme (tablets) */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #home {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #img {
+        width: 60%;
+    }
+
+    #text {
+        max-width: 90%;
+    }
+
+    #about {
+        padding: 40px;
+    }
+
+    #about #h2 {
+        font-size: 24px;
+    }
+
+    #about #p {
+        font-size: 18px;
+    }
+
+    #fundi {
+        padding: 35px;
+    }
+
+    #fundi #h21 {
+        font-size: 30px;
+    }
+
+    #fundi #p2 {
+        font-size: 18px;
+    }
+
+    #button {
+        font-size: 20px;
+        padding: 14px 28px;
+    }
+}
 
 
 #techniques {
@@ -355,6 +470,133 @@ transform: translate(-10px);
 
     }
 
+
+
+/* Përshtatje për ekranet më të vogla (smartphone) */
+@media (max-width: 768px) {
+    #techniques {
+        padding: 20px;
+    }
+
+    #techniques h2 {
+        font-size: 22px;
+        width: auto;
+        border: 5px solid rgb(180, 180, 209);
+        outline: 5px solid rgb(138, 103, 103);
+    }
+
+    #technique, #technique2, #technique3 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    #technique-image img, #technique-image2 img, #technique-image3 img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #technique-info, #technique-info2, #technique-info3 {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    #technique-info h3, #technique-info2 h3, #technique-info3 h3 {
+        font-size: 22px;
+    }
+
+    #technique-info p, #technique-info2 p, #technique-info3 p {
+        font-size: 16px;
+    }
+
+    #techniques p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #techniques h2, #technique-info h3 {
+        font-size: 24px;
+    }
+}
+
+/* Përshtatje për ekranet e mesme (tablets) */
+@media (max-width: 1024px) {
+    #techniques {
+        padding: 30px;
+    }
+
+    #techniques h2 {
+        font-size: 26px;
+        width: auto;
+        border: 7px solid rgb(180, 180, 209);
+    }
+
+    #technique, #technique2, #technique3 {
+        flex-direction: column;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    #technique-image img, #technique-image2 img, #technique-image3 img {
+        max-width: 90%;
+    }
+
+    #technique-info h3, #technique-info2 h3, #technique-info3 h3 {
+        font-size: 24px;
+    }
+
+    #technique-info p, #technique-info2 p, #technique-info3 p {
+        font-size: 17px;
+    }
+
+    #techniques p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+}
+
+
+
+#button1 {
+    background-color: #c1dbdb; 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 20px; 
+    border-radius: 5px; 
+    border: none; 
+    cursor: pointer; /* Tregon dorën kur kalon mbi butonin */
+    text-align: center; /* Siguron që teksti është i centuar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hidh një hije të lehtë për t'i dhënë butonit një efekt të theksuar */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Efekte kalimi për ngjyrën dhe hijen */
+    line-height: 2; /* Rregullimi i line-height për të krijuar hapësirë vertikale */
+    letter-spacing: 3px; /* Përshtatja e hapësirës horizontale ndërmjet shkronjave */
+}
+
+/* Kur kalon mbi butonin */
+#button1:hover {
+    background-color: #76a3b8; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Përshtatje për ekranet më të vogla (smartphone) */
+@media (max-width: 768px) {
+    #button1 {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+
+/* Përshtatje për ekranet e mesme (tablets) */
+@media (max-width: 1024px) {
+    #button1 {
+        font-size: 19px;
+        padding: 14px 28px;
+    }
+}
+
+
     #tips {
         padding: 40px;
         background: linear-gradient(135deg, #dd4234, #ff8a00);
@@ -466,17 +708,56 @@ transform: translate(-10px);
     }
     
     
-    #button1 {
-        background-color: #c1dbdb; 
-        color: white; 
-        padding: 15px 30px; 
-        font-size: 20px; 
-        border-radius: 5px; 
-        transition: background-color 0.3s; 
+
+
+
+    @media (max-width: 768px) {
+        #tips {
+            padding: 20px;
+        }
+    
+        #tips h2 {
+            font-size: 1.8rem;
+        }
+    
+        #tips h3 {
+            font-size: 1.3rem;
+        }
+    
+        #tips div {
+            padding: 20px;
+        }
+    
+        #tips p {
+            font-size: 1rem;
+        }
     }
     
-    #button1:hover {
-        background-color: #76a3b8; 
+    @media (max-width: 480px) {
+        #tips {
+            padding: 15px;
+        }
+    
+        #tips h2 {
+            font-size: 1.5rem;
+        }
+    
+        #tips h3 {
+            font-size: 1.2rem;
+        }
+    
+        #tips div {
+            padding: 15px;
+        }
+    
+        #tips p {
+            font-size: 0.95rem;
+        }
+    
+        #tips div:before {
+            font-size: 1.5rem;
+            top: -8px;
+        }
     }
 
 
@@ -708,10 +989,8 @@ button:hover {
     margin-top: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
-   
 }
- 
+
 #motivational-message h3 {
     color: #2c3e50;
     font-size: 24px;
@@ -728,12 +1007,128 @@ button:hover {
 
 #motivational-message p::before {
     content: "“";
-    font-size: 36
+    font-size: 36px;
+    color: #7f8c8d;
+    margin-right: 10px;
+}
 
+#motivational-message p::after {
+    content: "”";
+    font-size: 36px;
+    color: #7f8c8d;
+    margin-left: 10px;
 }
 
 
 
+
+@media (max-width: 768px) {
+    #quiz {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    select {
+        width: 100%;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    #diary-form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    #study-diary {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .entry {
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input, textarea {
+        padding: 10px;
+    }
+
+    #motivational-message h3 {
+        font-size: 1.8rem;
+    }
+
+    #motivational-message p {
+        font-size: 1rem;
+    }
+
+    #quiz-explanation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #quiz-text {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #dropdown-list {
+        min-width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #quiz {
+        padding: 10px;
+    }
+
+    #diary-form textarea, input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #study-diary {
+        padding: 10px;
+    }
+
+    #motivational-message h3 {
+        font-size: 1.6rem;
+    }
+
+    #motivational-message p {
+        font-size: 0.9rem;
+    }
+
+    #quiz-text {
+        width: 70%;
+        height: auto;
+        padding: 15px;
+    }
+}
 
 
 
