@@ -4,7 +4,7 @@ nav ul {
     padding: 0;
     background: -webkit-linear-gradient(45deg, #eee9ca, #eeedc0);
     text-align: center;
-    transition: background-color 0.3s ease; 
+    transition: color 0.3s ease; 
 }
 
 nav ul li {
@@ -73,7 +73,7 @@ nav ul li a:hover {
 #h1 {
     font-size: 28px;
     color: #6d6c6c;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(235, 192, 192, 0.1);
 }
 
 #p {
@@ -89,7 +89,7 @@ padding: 40px;
 background-color: #f9f9f9;
 margin-top: 2opx;
 border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 transition: transform 0.4s ease;
    
   
@@ -125,7 +125,7 @@ transform: translate(-10px);
     padding: 40px;
     border-radius: 10px;
     margin-top: 30px;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 #fundi:hover {
@@ -135,8 +135,8 @@ transform: translate(-10px);
 #h21 {
     font-size: 32px;
     margin-bottom: 15px;
-    font-weight: 700;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    
+   
 }
 
 #p2 {
@@ -164,8 +164,8 @@ transform: translate(-10px);
   /* Përshtatje për ekranet më të vogla (smartphone) */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /*elementet vertikalisht ne nje kolone*/
+        align-items: center; /*elementet child ne qender*/
         padding: 20px;
     }
 
@@ -282,13 +282,13 @@ transform: translate(-10px);
     background: -webkit-linear-gradient(45deg, #4c4658, #d3d2d3);
     padding: 40px;
     border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
     text-align: center;
 }
 
 #techniques:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  
     background-color: #878cd6;
 
 }
@@ -305,7 +305,7 @@ transform: translate(-10px);
 
 #techniques h2:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  
     background-color: #eaebf0;
 
 }
@@ -319,7 +319,7 @@ transform: translate(-10px);
 
 #techniques p:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    
     background-color: #cfcfd1;
 
 }
@@ -333,12 +333,11 @@ transform: translate(-10px);
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 #technique:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background-color: #fffbf0;
 
 }
@@ -353,7 +352,7 @@ transform: translate(-10px);
 
 #technique-info {
     flex: 1; 
-    padding-left: 20px;  
+    padding: 20px;  
 }
 
 
@@ -379,12 +378,11 @@ transform: translate(-10px);
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
 
 #technique2:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background-color: #fffbf0;
 
 }
@@ -398,8 +396,8 @@ transform: translate(-10px);
 
 
 #technique-info2 {
-    flex: 1; 
-    padding-left: 20px; 
+    flex: 1; /* zgjerohet për të mbushur hapësirën që nuk është mbushur nga elementët e tjerë.*/
+    padding: 20px; 
 }
 
 
@@ -419,18 +417,17 @@ transform: translate(-10px);
 
 #technique3 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*Elementët do të pozicionohen në fillim dhe fund të konteinerit dhe hapësira e mbetur do të shpërndahet barabar midis elementëve të brendshëm.*/
     align-items: center;
     margin-bottom: 40px;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
 }
 
 #technique3:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background-color: #fffbf0;
 
 }
@@ -459,7 +456,7 @@ transform: translate(-10px);
 #ul3 {
     
         list-style-type: disc; 
-        padding-left: 20px; 
+        padding: 20px; 
         line-height: 1.6;
 }
 
@@ -567,17 +564,14 @@ transform: translate(-10px);
     border-radius: 5px; 
     border: none; 
     cursor: pointer; /* Tregon dorën kur kalon mbi butonin */
-    text-align: center; /* Siguron që teksti është i centuar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hidh një hije të lehtë për t'i dhënë butonit një efekt të theksuar */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Efekte kalimi për ngjyrën dhe hijen */
-    line-height: 2; /* Rregullimi i line-height për të krijuar hapësirë vertikale */
-    letter-spacing: 3px; /* Përshtatja e hapësirës horizontale ndërmjet shkronjave */
+    text-align: center; 
+    line-height: 2; 
+    letter-spacing: 3px; 
 }
 
-/* Kur kalon mbi butonin */
+
 #button1:hover {
     background-color: #76a3b8; 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 /* Përshtatje për ekranet më të vogla (smartphone) */
@@ -602,7 +596,6 @@ transform: translate(-10px);
         background: linear-gradient(135deg, #dd4234, #ff8a00);
         border-radius: 15px;
         margin-top: 30px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         text-align: center;
     }
     
@@ -615,8 +608,6 @@ transform: translate(-10px);
         text-transform: uppercase;
         font-family: 'Arial', sans-serif;
         background: -webkit-linear-gradient(45deg, #1d0301, #ff8a00);
-        -webkit-background-clip: text;
-        color: transparent;
         display: inline-block; 
         position: relative; 
         animation: moveText 3s linear infinite alternate;
@@ -637,7 +628,7 @@ transform: translate(-10px);
 
 
     #tips p {
-        color: #f4f4f4;
+        color: #867373;
         font-size: 1.1rem;
         margin-bottom: 30px;
         line-height: 1.8;
@@ -651,24 +642,16 @@ transform: translate(-10px);
         background-color: #ffffff;
         border-left: 5px solid #ff6f61;
         border-radius: 12px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
         position: relative;
     }
     
     #tips div:hover {
         transform: translateY(-10px);
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
         background-color: #fffbf0;
     }
     
-    #tips div:before {
-        content: "💡";
-        font-size: 2rem;
-        position: absolute;
-        top: -10px;
-        left: 20px;
-    }
+ 
     
     #tips h3 {
         color: #2c3e50;
@@ -762,14 +745,6 @@ transform: translate(-10px);
 
 
 
-#quiz {
-    background: -webkit-linear-gradient(45deg, #f9ffc5, #eeedc0);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 250px;
-    margin: auto;
-}
 
 h2 {
     color: #333;
@@ -796,12 +771,13 @@ button {
     margin-top: 15px;
     cursor: pointer;
     border-radius: 5px;
-    transition: 0.3s;
+  
 }
 
 button:hover {
-    background-color: #548d61;
+    background-color: #546e5a;
 }
+
 
 #result {
     margin-top: 15px;
@@ -810,17 +786,15 @@ button:hover {
     color: #333;
 }
 
-
 #diary-form {
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
     background: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    
    
 }
 
@@ -833,49 +807,16 @@ button:hover {
     overflow: auto;
 }
 
-#study-diary {
-    background: #ffebee;
-    padding: 20px;
-    max-width: 600px;
-    margin: auto;
-    border-left: 5px solid #684e57;
-    box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
-}
 
-h2 {
-    text-align: center;
-    font-size: 24px;
-}
 
-.entry {
-    background: white;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-}
 
-form {
-    background: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+
 
 label {
     font-weight: bold;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+
 
 button {
     background: #f7edf0;
@@ -916,13 +857,10 @@ button:hover {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+ 
 }
 
-#dropdown:hover #dropdown-list {
-    display: block;
-}
+
 
 #dropdown-list a {
     color: black;
@@ -939,7 +877,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
     margin-top: 20px;
 }
 
@@ -987,7 +924,6 @@ button:hover {
     padding: 20px;
     border-radius: 8px;
     margin-top: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -1005,130 +941,64 @@ button:hover {
     margin-top: 10px;
 }
 
-#motivational-message p::before {
-    content: "“";
-    font-size: 36px;
-    color: #7f8c8d;
-    margin-right: 10px;
-}
 
-#motivational-message p::after {
-    content: "”";
-    font-size: 36px;
-    color: #7f8c8d;
-    margin-left: 10px;
-}
 
 
 
 
 @media (max-width: 768px) {
-    #quiz {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    label {
-        font-size: 14px;
-    }
-
-    select {
-        width: 100%;
-        padding: 12px;
+    #diary-form {
+        width: 90%;
+        margin: 10px auto;
     }
 
     button {
         width: 100%;
         padding: 12px;
-        font-size: 18px;
-    }
-
-    #diary-form {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    #study-diary {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    .entry {
-        padding: 10px;
-    }
-
-    form {
-        padding: 10px;
-    }
-
-    input, textarea {
-        padding: 10px;
-    }
-
-    #motivational-message h3 {
-        font-size: 1.8rem;
-    }
-
-    #motivational-message p {
-        font-size: 1rem;
-    }
-
-    #quiz-explanation {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     #quiz-text {
-        width: 80%;
-        height: auto;
-        padding: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #motivational-message h3 {
+        font-size: 20px;
+    }
+
+    #motivational-message p {
+        font-size: 16px;
     }
 
     #dropdown-list {
         min-width: 100%;
     }
-}
 
+    #quizzes {
+        padding: 10px;
+    }
+}
 
 @media (max-width: 480px) {
     h2 {
-        font-size: 1.6rem;
+        font-size: 18px;
     }
 
-    #quiz {
+    select, textarea {
         padding: 10px;
-    }
-
-    #diary-form textarea, input {
-        font-size: 14px;
     }
 
     button {
-        font-size: 16px;
-    }
-
-    #study-diary {
-        padding: 10px;
-    }
-
-    #motivational-message h3 {
-        font-size: 1.6rem;
-    }
-
-    #motivational-message p {
-        font-size: 0.9rem;
+        font-size: 14px;
+        padding: 8px 12px;
     }
 
     #quiz-text {
-        width: 70%;
-        height: auto;
-        padding: 15px;
+        width: 80px;
+        height: 80px;
+    }
+
+    #motivational-message {
+        margin-top: 15px;
     }
 }
-
-
-
