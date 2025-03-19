@@ -89,7 +89,6 @@ padding: 40px;
 background-color: #f9f9f9;
 margin-top: 2opx;
 border-radius: 10px;
-
 transition: transform 0.4s ease;
    
   
@@ -353,8 +352,9 @@ button:hover {
 
 #techniques h2:hover {
     transform: translateY(-10px);
-  
     background-color: #eaebf0;
+  
+    
 
 }
 #techniques p {
@@ -367,7 +367,6 @@ button:hover {
 
 #techniques p:hover {
     transform: translateY(-10px);
-    
     background-color: #cfcfd1;
 
 }
@@ -465,7 +464,7 @@ button:hover {
 
 #technique3 {
     display: flex;
-    justify-content: space-between; /*Elementët do të pozicionohen në fillim dhe fund të konteinerit dhe hapësira e mbetur do të shpërndahet barabar midis elementëve të brendshëm.*/
+    justify-content: space-between; 
     align-items: center;
     margin-bottom: 40px;
     background-color: #ffffff;
@@ -479,16 +478,24 @@ button:hover {
     background-color: #fffbf0;
 
 }
+
 #technique-image3 img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
+    max-width: 300px; 
+    height: auto;  
+    border-radius: 8px;  
+
+}
+
+
+#technique-info2 {
+    flex: 1; /* zgjerohet për të mbushur hapësirën që nuk është mbushur nga elementët e tjerë.*/
+    padding: 20px; 
 }
 
 #technique-info3 h3 {
     font-size: 28px;
-    color: #39a7a7;
+    color: #3498db;
     margin-bottom: 15px;
 }
 
@@ -855,7 +862,7 @@ select {
 
 
 label {
-    font-weight: bold;
+   font-weight: bold;
 }
 
 
