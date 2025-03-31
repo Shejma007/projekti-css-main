@@ -73,7 +73,7 @@ nav ul li a:hover {
 #h1 {
     font-size: 28px;
     color: #6d6c6c;
-    text-shadow: 1px 1px 2px rgba(235, 192, 192, 0.1);
+   
 }
 
 #p {
@@ -127,7 +127,6 @@ body {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: auto;
 }
